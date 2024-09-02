@@ -64,7 +64,9 @@ resource "aws_iam_role_policy" "cross_account_backup_policy" {
         "backup:UntagResource",
         "backup:UpdateRecoveryPointLifecycle",
         "backup:PutBackupVaultAccessPolicy",
-        "backup:PutBackupVaultNotifications"
+        "backup:PutBackupVaultNotifications",
+        "backup:CopyIntoBackupVault",
+        "backup:StartCopyJob"
       ],
       "Resource": "*"
     },

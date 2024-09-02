@@ -10,13 +10,13 @@ resource "aws_backup_plan" "backup_plan" {
     #completion_window = 360
 
     lifecycle {
-      delete_after = 90
+      delete_after = 35
     }
 
     copy_action {
       destination_vault_arn = var.destination_vault_arn
       lifecycle {
-        delete_after = 120
+        delete_after = 35
       }
     }
   }

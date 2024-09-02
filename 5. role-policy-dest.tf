@@ -35,7 +35,7 @@ resource "aws_iam_policy" "destination_backup_policy" {
           "backup:DeleteRecoveryPoint"
         ],
         Resource = [
-          "arn:aws:backup:us-west-2:659721849750:backup-vault/aramos-stage",
+          "arn:aws:backup:us-west-2:361769575814:backup-vault:destination-vault-test",
           "arn:aws:backup:us-west-2:659721849750:recovery-point/*"
         ]
       }
